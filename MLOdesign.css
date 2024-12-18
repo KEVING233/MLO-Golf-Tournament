@@ -1,0 +1,205 @@
+/* this is the external css page that houses the formatting for all of the webpages of my website, there will be comments throughout this page explaining what code does what*/
+
+
+body, h1, p {
+  margin: 0;
+  padding: 0;}
+
+body {  font-family: 'Poppins', sans-serif; /* The font  */
+  background-color: #e1e6eb; /* Lighter grey background */
+  color: #003366; /* Dark navy text color for the homepage  */}
+
+/* Styling for the href links */
+a {text-decoration: none;
+  color: white;
+  margin-right: 20px;}
+
+a:hover {text-decoration: underline;}  /* so the hfrev links underline once you hover the mouse over */
+
+/* Heading section named hero-section */  /*  this formatting involves how big the image is at the top of the page, the h1 being centred etc. */
+.hero-section { background-image: url('1homepage.jpg');
+ background-size: cover;
+ 
+ background-position: center;
+  height: 66vh; /* Covers two-thirds of the page */
+  color: white;
+  text-align: center;
+  display: flex;               
+  justify-content: center;   /* formatting for the image and text to be postioned correctly in the heading section */
+  align-items: center;
+  flex-direction: column;
+  position: relative;}
+
+.hero-section h1 { font-size: 3.5rem;
+       color: white; /* White text */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Dark shadow on the h1 to make it stand out from the background image */
+  margin: 0;}  /*  to ensure that there is no background or padding */
+
+.hero-section p {   margin: 10px 0;
+  font-size: 1.2rem;}
+
+#highlighted-text { color: white;
+  font-weight: bold;}
+
+/* href navigation links in heading section highlighted on hover */
+.hero-section .nav-links {position: absolute; top: 20px; right: 20px;}
+
+.hero-section .nav-links ul { list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;}
+
+.hero-section .nav-links li { display: inline-block;} /* to display the links horizontally */
+
+.hero-section .nav-links a { color: white;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  text-decoration: none;} /* Ensures the links aren't underlined before hovering over them */
+
+.hero-section .nav-links a:hover { text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.3); }        /* Subtle blackish background when mouse hovers */
+
+
+/* Winner Section Styling and formatting */
+#winner-section { display: flex;
+  justify-content: flex-start; /* Align the past winner image to the left */
+  align-items: center;
+  padding: 40px;
+  margin-top: 20px;
+  background-color: #e1e6eb;}  /* Light grey background for the section */
+
+.image-container {
+  flex: 1;
+  margin-right: 40px;
+}
+
+#winner-section img {
+  width: 100%; /* Makes the image responsive for SEO */
+  max-width: 600px; /* Limiting the image size */
+  height: auto;
+  border-radius: 8px;}  /* makes the images have rounded corners for aesthetics */
+
+.text-container {  flex: 2;
+  max-width: 50%; } /* Controls the how wide the text can go on the page */
+
+.text-container h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;} /* how far down from the bottom the text is located */
+
+.text-container p {
+  font-size: 1.2rem;  /* text formatting for homepage description */
+  line-height: 1.6;}
+
+/* Location Section */
+.location {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.location iframe {
+  width: 80%; /* Adjust width of the map */
+  height: 500px; /* Adjust height of the map */
+  border: 0;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Content Sections */
+.content-section { padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 20px;}
+
+.content-section p {font-size: 1.5rem;}
+
+/* Footer tyling code. for the bottom boarder section of the webpage */
+footer {background-color: #2c3e50; /* Navy background */
+  color: white; /* White text */
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;}
+
+.footer-content {display: flex;
+  justify-content: space-between;
+  align-items: center;} /* Controls where the text goes in the footer section */
+
+.footer-left {
+  font-size: 4rem; /* bigger font size for  address */
+  color: white;}
+
+.footer-left p {margin: 0;}
+
+.footer-right {display: flex;
+  justify-content: space-between;
+  gap: 10px;}
+
+.footer-right img {height: 30px; /* Sponser image size for at the bottom of the page  */
+  width: auto;
+  filter: brightness(0) invert(1); } /* Makes images appear white */
+
+/* formatting for the margin of the text and images in the footers */
+footer p:last-child {text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;}
+
+/* --- Responsive Design for search engine optimisation. this allows users to view the websites on all mobile devices --- */
+
+/*  this is to make the past winnner images responsive */
+#winner-section img {
+  width: 100%; /* This will ensure that the image takes up 100% of the available width in the container */
+  height: auto; /* Maintain the aspect ratio */}
+
+/* Sign-Up Section of the website */
+.sign-up-section { padding: 40px;
+  background-color: #ffffff;
+  max-width: 600px;      /* fits the form into the page in an optimal size */
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sign up box has the same colour boarder as the bottom footer  */
+  border: 3px solid #003366; /* Border with the same color as the footer */}
+
+/* Form Styling */
+h1 { color: #ffffff; /* colour of the form background */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); } /* Black shadow on the Registration form title to make it stand out and for aesthetics*/
+
+p {font-size: 1.2rem;
+  margin-bottom: 20px;}  /* font sixe for the writing on the form */
+
+label {display: block;
+  font-size: 1.1rem;
+  margin: 10px 0 5px;}
+
+input, button { width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;}
+
+button { background-color: #003366;    /* submit button formatting so that it isn't white. */
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;}
+
+button:hover {background-color: #00508c;} /* so that the submit button hovers when over put your mouse over it */
+
+
+
+
+
+/* Styling for the embedded youtube highlights */
+.video-container {
+  text-align: center; /* Centers the video in the page  */
+  margin: 40px auto;  /* Add some space above and below for the footer section  */
+  padding: 20px;
+  max-width: 80%;  /* Limits the width of the video so it looks good on the page  */
+  background-color: transparent;  
+  border-radius: 8px;  /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for behind the video */}
+
+.video-container iframe {
+  width: 100%; /* Ensures the video fits within the container */
+  height: 500px;  /* Appropriate height for the video */
+  max-width: 800px;  /* Maximum width of the video */
+  border-radius: 8px; /* Rounded corners on the video */}
