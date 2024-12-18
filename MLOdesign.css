@@ -51,7 +51,7 @@ a:hover {text-decoration: underline;}  /* so the hfrev links underline once you 
 
 .hero-section .nav-links li { display: inline-block;} /* to display the links horizontally */
 
-.hero-section .nav-links a { color: white;
+.hero-section .nav-links a { color: #003366;
   font-size: 1.2rem;
   padding: 5px 10px;
   background-color: transparent;
@@ -60,6 +60,10 @@ a:hover {text-decoration: underline;}  /* so the hfrev links underline once you 
 
 .hero-section .nav-links a:hover { text-decoration: underline;
   background-color: rgba(0, 0, 0, 0.3); }        /* Subtle blackish background when mouse hovers */
+
+
+
+
 
 
 /* Winner Section Styling and formatting */
